@@ -5,3 +5,11 @@ body {
   padding: 3rem 1.5rem;
   text-align: center;
 }
+.tx-head
+{
+  color: black;
+}
+.tx-contents
+{
+  color: gray;
+}
