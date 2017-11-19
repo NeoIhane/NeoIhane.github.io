@@ -4,7 +4,7 @@ html {
   position: relative;
   min-height: 100%;
 }
-body {
+body.footer {
   margin-bottom: 60px; /* Margin bottom by footer height */
 }
 .footer {
@@ -23,11 +23,11 @@ body {
 .inside {
   padding: 0 15px;
 }
-.container {
+/*.container {
   width: auto;
   max-width: 680px;
   padding: 0 15px;
-}
+}*/
 .container_footer {
   width: auto;
   padding: 0 15px;
