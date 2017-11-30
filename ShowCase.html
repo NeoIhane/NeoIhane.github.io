@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Hello, world!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="CSS/starter-template.css" rel="stylesheet">
+    <link href="CSS/sticky-footer.css" rel="stylesheet">
+    <link href="CSS/carousel.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="webgl/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="webgl/TemplateData/style.css">
+    <script src="webgl/TemplateData/UnityProgress.js"></script>  
+    <script src="webgl/Build/UnityLoader.js"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "webgl/Build/webgl.json", {onProgress: UnityProgress});
+      </script>
+ </head>
+  <body>
+      <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand" href="index.html">
+                NeoIhane
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+          
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item ">
+                      <a class="nav-link" href="Projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="PersonalProjects.html">Personal Projects</a>
+                          </li>
+                          <li class="nav-item active">
+                            <a class="nav-link" href="ShowCase.html">ShowCase</a>
+                          </li>
+                  </ul>
+
+                </div>
+              </nav>
+            </header>
+              <main role="main">
+              <div class="container marketing">   
+              <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+        
+                <div class="row featurette">
+                  <div class="col-md-7">
+                    <h2 class="featurette-heading">Test</h2>
+                    <p class="lead">Water Shader</p>
+                  </div>
+                  <div class="col-md-5">
+                        <div class="webgl-content">
+                                <div id="gameContainer" style="width: 900px; height: 600px"></div>
+                                <div class="footer">
+                                  <div class="webgl-logo"></div>
+                                  <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+                                  <div class="title">TA</div>
+                                </div>
+                              </div>
+                  </div>
+                  
+                </div>
+                <hr class="featurette-divider">
+        
+                <!-- /END THE FEATURETTES -->
+             </div>           
+                            <footer class="footer">
+                                    <div class="container_footer">
+                                      <p align="right">
+                                            <span class="text-muted">Game Developer</span>
+                                          </p>
+                                    </div>
+                                  </footer>
+                                </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/vendor/holder.min.js"></script>
+  </body>
+</html>
