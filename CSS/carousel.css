@@ -91,12 +91,12 @@ body {
 }
 
 /*Options*/
-.content_option_right
+div.content_option_right
 {
   text-align: right;
   font-size: 0.8rem;
 }
-.content_option_center
+div.content_option_center
 {
   text-align: center;
   font-size: 0.8rem;
