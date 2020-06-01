@@ -101,3 +101,11 @@ div.content_option_center
   text-align: center;
   font-size: 0.8rem;
 }
+div.tag
+{
+  text-align: left;
+  padding-left: 0.5rem;
+  /*background-color:rgba(32, 32, 32, 0.507);*/
+  background-image: linear-gradient(to right, rgba(32, 32, 32, 0.507), rgba(32, 32, 32, 0.0));
+  color: rgb(255, 255, 255);
+}

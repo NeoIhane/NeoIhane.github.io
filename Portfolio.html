@@ -8,6 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="CSS/starter-template.css" rel="stylesheet">
     <link href="CSS/sticky-footer.css" rel="stylesheet">
     <link href="CSS/carousel.css" rel="stylesheet">
  </head>
@@ -30,7 +31,7 @@
                     <a class="nav-link" href="Portfolio.html">Portfolio</a>
                   </li>
                   <li class="nav-item ">
-                          <a class="nav-link" href="PersonalProjects.html">Personal Projects</a>
+                          <a class="nav-link" href="PersonalProjects.html">Projects</a>
                         </li>
                         <li class="nav-item ">
                             <a class="nav-link" href="ShowCase.html">ShowCase</a>
@@ -47,140 +48,108 @@
     
           <div class="container marketing">
     
-    
+            <hr>
     
             <!-- START THE FEATURETTES -->
-<!--GameJam-->    
-<hr class="featurette-divider">
+                 
+            <h2 class="featurette-heading">3D <span class="text-muted">Models</span></h2>
+            <div><b>Tools:</b> Blender</div>
+            <hr>
 
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">Transmission. <span class="text-muted"> Unity</span></h2>
-            <p class="lead">
-              <p><b>Work: </b>Coding & GameDesign & Art </p> 
-              <p><b>Tools: </b>Unity, Visual studio (C#)  </p> 
-              <p><b>Project: </b>Making a game in Global Game Jam 2018 </p>   
-            </p>
-            <!--Translate-->      
-            <p>
-                <a class="btn btn-primary" data-toggle="collapse" href="#TH-Dog" aria-expanded="false" aria-controls="collapseExample">
-                  TH
-                </a>
-              </p>
-              <div class="collapse" id="TH-Dog">
-                <div class="card card-block" 
-                <p>ร่วมงานเขียนเกมภายใน 48 ชั่วโมง                
-                </p>
+            <div class="row featurette" body style="background-color:rgb(32, 32, 32, 0);"><!--Row1-->
+              <div class="col-md-4">
+                <!-- Sketchfab Model01-->
+                <div class="sketchfab-embed-wrapper">
+                  <iframe title="A 3D model" width="100%" height="240" src="https://sketchfab.com/models/610dd99f03d241c1b9d67ae3af45a465/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                 </div>
+                <!-- END Sketchfab Model01-->
               </div>
-            <!--Link-->
-            <p> 
-                <small>See:  </small>  
-                <a href="https://globalgamejam.org/2018/games/transmission-31"> 
-                  <div class="icon" ><img src="images/gamejam.png" height="24" >
-                </div> 
-              </a>
-               </p>
-          </div>
-          <div class="col-md-5">
-            <img src="images/paperbird.png" class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-          </div>
-        </div>
-  <hr class="featurette-divider">
-<!--End GameJam->                    
-<!--Momentum-->                    
-                            <div class="row featurette">
-                              <div class="col-md-7 order-md-2">
-                                <h2 class="featurette-heading">Momentum Game<span class="text-muted"> Play tangible on multi-touch Table</span></h2>
-                                <p class="lead">
-                                  [Thesis] This is solving problem momentum physic game by using tangible interface and touch on multitouch table.
-                                  I put 2 sensors in tagible (switch for on/off and stick with joystrick sensor for control force in game),
-                                  created physic game by using physic2D in Unity, created and write protocal for communication in between tangible and application via serialport.
-                                  I build Multi-touch table for testing by using TUIO protocal, Frustrated Total Internal Reflex(FTIR) technique, 
-                                  and reacTivision (Program that process image from camera and send TUIO data).   
-                                  <p><b>Tools: </b>Unity, reacTivision, Visual studio (C#)</p> 
-                                  <p><b>Technical: </b>TUIO protocol, Frustrated Total Internal Reflex(FTIR), Physic, Bluetooth, Tactile</p>    
-                                  <p><b>Project: </b>Thesis</p> 
-                                   </p>
-                                   <!--Translate-->      
-                                    <p>
-                                        <a class="btn btn-primary" data-toggle="collapse" href="#TH-Momentum" aria-expanded="false" aria-controls="collapseExample">
-                                          TH
-                                        </a>
-                                      </p>
-                                      <div class="collapse" id="TH-Momentum">
-                                        <div class="card card-block">
-                                        <p>เกมแก้ปัญหาโมเมนตัมเป็นส่วนหนึ่งของหัวข้อปริญญานิพนธ์ ”Tactile-based Tangible for Tactile-based Multi-touch Table” 
-                                          วิธีเล่นผู้เล่นต้องวางบอลบนจุดกากบาทสีแดงให้พร้อมกัน จึงจะผ่านด่านโดยผู้เล่นควบคุมตำแหน่ง และทิศทางของลูกบอลได้หนึ่งลูกการควบคุมใช้มือจับ 
-                                          เคลื่อนตัวกล่องเพื่อควบคุมตำแหน่ง ใช้การเลื่อนแกนควบคุมเล็กๆที่อยู่ด้านบนกล่องกำหนดแรง ของลูกบอลปล่อยแกนเพื่อปล่อยลูกบอลให้ไปยังจุดกากบาทสีแดงที่กำหนด
-                                          หรือชนลูกบอลอื่นๆ ในฉาก เพื่อให้ไปถึงจุดที่กำหนด ตัวเกมใช้ physic ใน unity ในการคำนวณเกี่ยวกับการชน 
-                                        </p>
-                                        </div>
-                                      </div>
-                                   <!--Link-->
-                                   <!--p> 
-                                      <small>See:  </small>  
-                                      <a href="https://www.youtube.com/watch?v=QhlgQKBWfhs"> 
-                                        <div class="icon" ><img src="images/yt_logo_rgb_light.png" height="24" >
-                                      </div> 
-                                    </a>
-                                     </p-->
-                              </div>
-                              <div class="col-md-5 order-md-1">
-                                  <img src="images/pic_tt.png" alt="Generic placeholder image" class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto">
-                              </div>
-                            </div>
-            <hr class="featurette-divider">
-<!--End Momentum-->            
-<!--CyberGrove-->    
-            <div class="row featurette">
-              <div class="col-md-7">
-                <h2 class="featurette-heading">Play piano with cybergrove. <span class="text-muted">Orge3D, C/C++</span></h2>
-                <p class="lead">Class project in human computer interface class (2 persons). 
-                  Receive signal from cyberglove and joystick to control visual hand for playing piano. 
-                  When position of finger touch on the key of piano it will generate sound of note 
-                  with midi and send signal to microcontroller to drive vibration motor and show light on finger that touch. 
-                  I did program and application parts and my friend did microcontroller and circuit parts. </p>
-                  <p><b>Tools: </b>Orge3D, reacTivision, Visual studio (C/C++), CyberGrove  </p> 
-                  <p><b>Technical: </b>Read and translate data serial.</p>    
-                  <p><b>Project: </b>Class project</p> 
-                <p> 
-            <!--Translate-->      
-            <p>
-              <a class="btn btn-primary" data-toggle="collapse" href="#TH-CyberGrove" aria-expanded="false" aria-controls="collapseExample">
-                TH
-              </a>
-            </p>
-            <div class="collapse" id="TH-CyberGrove">
-              <div class="card card-block">
-              <p>คลาสโปรเจคในวิชา Human computer interactive เป็นโครงการร่วมกับเพื่อนอีกคนหนึ่ง 
-                โดยใช้ CyberGrove (ถุงมือที่ติดใยแก้วนำแสงเพื่ออ่านค่าองศาการงอของนิ้วและมือ) ในการเล่นเปียโนในคอมพิวเตอร์ 
-                มีมอเตอร์สั่นและหลอดไฟติดเพิ่มที่นิ้วเพื่อให้เห็นและรู้สึกว่ากดโดยคีย์แล้ว ในส่วนนี้รับผิดชอบเรื่องของการเขียนโปรแกรม
-                ตั้งแต่สร้างโมเดลนำเข้ามาในฉาก รับข้อมูลที่ได้จาก CyberGrove มาแปลงให้ตรงกับมือของโมเดล เคลื่อนตำแหน่งมือโดยใช้ 
-                joystick และเล่นเสียงเมื่อกดโดยคีย์ของเปียโนโดยใช้การสร้างเสียง midi ของ window และส่งคำสังกลับไปให้ 
-                microcontroller เพื่อให้มอเตอร์ที่นิ้วสั่นและแสดงไฟว่ากดโดน
+              <div class="col-md-4">
+                <!-- Sketchfab Model02-->
+                <div class="sketchfab-embed-wrapper">
+                  <iframe title="A 3D model" width="100%" height="240" src="https://sketchfab.com/models/fb5b7a2d6aa245ddac31578cf9f24d5e/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                </div>
+                <!-- END Sketchfab Model02-->
+              </div>
+              <div class="col-md-4">
+                <!-- Sketchfab Model03-->
+                <div class="sketchfab-embed-wrapper">
+                  <iframe title="A 3D model" width="100%" height="240" src="https://sketchfab.com/models/2a14bfd0cac147b08575eb84204d3afc/embed?preload=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                </div>            
+                <!-- END Sketchfab Model03-->
+              </div>
+            </div>
+            <br>
+            <!--
+            <div class="row featurette" body style="background-color:rgb(32, 32, 32);" height="260">
+              <div class="col-md-4">
+               
+                <div class="sketchfab-embed-wrapper">
+                  <iframe width="100%" height="240" src="https://www.youtube.com/embed/8oVSRQlOYeo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>            
                 
-              </p>
               </div>
-            </div>
-
-
-            <!--Link-->
-                  </p>
-                    <small>Source code:  </small>  
-                    <a href="https://github.com/NeoIhane/PlayPianoWithCyberGlove"> 
-                      <div class="icon" ><img src="images/GitHub-Mark-64px.png" height="32" >
-                    </div> 
-                  </a>
-                   </p>
-              </div>
-              <div class="col-md-5">
-                <img src="images/pic_cybergrove.png"  class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-              </div>
-            </div>
-    
+            </div>         
             <hr class="featurette-divider">
-<!--End CyberGrove-->
+          -->
+<!--
+            <h2 class="featurette-heading">2D <span class="text-muted">Sprites</span></h2>
+            <div class="row featurette">
+              <div class="col-md-4">1
+              </div>
+              <div class="col-md-4">2
+              </div>
+              <div class="col-md-4">3
+              </div>
+            </div>
+            <hr class="featurette-divider">
+
+            
+
+-->
+            <h2 class="featurette-heading">Shaders <span class="text-muted">& Particles</span></h2>
+            <div class="tag"><b>Tools:</b> Unity3D</div>
+            <br>
+
+            <div class="row featurette">
+              <div class="col-md-6">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/DJWy5jIdzb8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="col-md-6">
+                <iframe width="100%" height="315" src="https://www.youtube-nocookie.com/embed/asKg8A5SAD8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+<!--           <div class="row featurette">
+              <div class="col-md-6">
+                <image width="100%" height="100%" src="images/VertexDisplacement.png"></image>
+              </div>
+              <div class="col-md-6">
+                
+              </div>
+            </div>
+            <hr>
+            <div class="row featurette">
+              <div class="col-md-6">
+                <image width="100%" height="100%" src="images/Dissolve.png"></image>
+              </div>
+              <div class="col-md-6">
+               
+              </div>
+            </div>
+            <hr class="featurette-divider">--> 
+<!--
+            <h2 class="featurette-heading">Lighting <span class="text-muted"> & Reflection</span></h2>
+            <div class="row featurette">
+              <div class="col-md-8">1
+              </div>
+              <div class="col-md-4">LightMap
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+              </div>
+            </div>-->
+            <hr class="featurette-divider">
 
             <!-- /END THE FEATURETTES -->
     
