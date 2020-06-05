@@ -36,7 +36,7 @@ let currentDirection = 0;
 var jumpHeight=0;
 function step() {
   frameCount++;
-  if (frameCount < 30) {
+  if (frameCount < 12) {
     window.requestAnimationFrame(step);
     return;
   }
@@ -54,7 +54,7 @@ function step() {
             forceJump=0;
             jump=false;
         }
-        score.innerHTML="Jump";
+        score.innerHTML="DiceYo is Jumping!";
     }else
     {
         score.innerHTML="Press 'A' Button";
@@ -110,7 +110,7 @@ function InputKey(e)
     {
         if(!jump)
         {
-            forceJump=24;
+            forceJump=32;
             jump=true;
         }
     }
