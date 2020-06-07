@@ -11,6 +11,16 @@
     <link href="CSS/starter-template.css" rel="stylesheet">
     <link href="CSS/sticky-footer.css" rel="stylesheet">
     <link href="CSS/carousel.css" rel="stylesheet">
+
+    <!-- Unity -->
+    <link rel="shortcut icon" href="Unity/BlendShape/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="Unity/BlendShape/TemplateData/style.css">
+    <script src="Unity/BlendShape/TemplateData/UnityProgress.js"></script>
+    <script src="Unity/BlendShape/Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Unity/BlendShape/Build/BlendShape.json", {onProgress: UnityProgress});
+    </script>
+
  </head>
   <body>
       <header>
@@ -148,6 +158,21 @@
                 <iframe width="100%" height="315" src="https://www.youtube.com/embed/1fPjqT4ILnA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </div>
             </div>
+
+
+
+            <h2 class="featurette-heading">Blend <span class="text-muted">Shape</span></h2>
+            <div class="tag"><b>Tools:</b> Unity3D</div>
+            <br>
+
+            <div class="row featurette">
+              <div class="col-md-12">
+           
+                <div id="unityContainer" style="width: 800px; height: 600px"></div>
+                
+              </div>
+            </div>
+            <br>
 <!--           <div class="row featurette">
               <div class="col-md-6">
                 <image width="100%" height="100%" src="images/VertexDisplacement.png"></image>

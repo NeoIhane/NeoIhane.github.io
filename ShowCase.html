@@ -11,14 +11,16 @@
     <link href="CSS/starter-template.css" rel="stylesheet">
     <link href="CSS/sticky-footer.css" rel="stylesheet">
     <link href="CSS/carousel.css" rel="stylesheet">
- <!--
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>  
-    <script src="Build/UnityLoader.js"></script>
+
+
+    <link rel="shortcut icon" href="Unity/BlendShape/TemplateData/favicon.ico">
+    <link rel="stylesheet" href="Unity/BlendShape/TemplateData/style.css">
+    <script src="Unity/BlendShape/TemplateData/UnityProgress.js"></script>
+    <script src="Unity/BlendShape/Build/UnityLoader.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/webgl.json", {onProgress: UnityProgress});
-    </script>-->
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Unity/BlendShape/Build/BlendShape.json", {onProgress: UnityProgress});
+    </script>
+
     <script async src="js/DiceyoRun.js"></script>
  </head>
   <body>
@@ -51,8 +53,8 @@
               </nav>
             </header>
               <main role="main" >
-
-
+                <div class="container marketing">
+                <h2 class="featurette-heading">HTML/Javascript <span class="text-muted">Game</span></h2>
                 <hr class="featurette-divider">
                 
                   <div class="content_option_center"> 
@@ -64,7 +66,7 @@
                   </div>
 
                 <hr class="featurette-divider">
-               
+                </div>
   <!--             
                 <div class="webgl-content">
                   <div id="gameContainer" style="width: 960px; height: 540px"></div>
