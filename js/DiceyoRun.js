@@ -1,3 +1,64 @@
+//Check sound;
+window.AudioContext = window.AudioContext || window.webkitAudioContext;
+var context = new AudioContext();
+var audio_context = null;
+var oscillator = null;
+const length = 2;
+const eps = 0.01;
+let isStarted = false;
+var system = document.getElementById("system");
+system.innerHTML="<b>System</b> Audio: "+context;
+function playSound(note) 
+{
+  if(!audio_context)
+  {
+    audio_context = new AudioContext();
+  }
+  oscillator = audio_context.createOscillator();
+  oscillator.type = 'sine';//'square';//'sine';
+  //oscillator.frequency.exponentialRampToValueAtTime(440,context.currentTime+1);
+  var time = audio_context.currentTime + eps;
+  oscillator.frequency.setTargetAtTime(frequencyFromNoteNumber(note),time,0.001);
+
+  oscillator.connect(audio_context.destination);
+  oscillator.start(audio_context.currentTime);
+  oscillator.stop(0.1);
+  /*if (!isStarted) {
+    oscillator.start(0);
+    isStarted = true;
+  } else {
+    audio_context.resume();
+  }*/
+}
+//Middle C = 60
+function frequencyFromNoteNumber( note ) 
+{
+  return 440 * Math.pow(2,(note-69)/12);
+}
+function noteOff() {
+  audio_context.suspend();
+}
+/*
+const tetris = [
+  [76, 4], [71, 8], [72, 8], [74, 4], [72, 8], [71, 8], [69, 4], [69, 8], [72, 8], [76, 4], [74, 8], [72, 8], [71, 4], [71, 8], [72, 8], [74, 4], [76, 4], [72, 4], [69, 4], [69, 4], [0,  4], [74, 3], [77, 8],[81, 4], [79, 8], [77, 8], [76, 3], [72, 8], [76, 4], [74, 8], [72, 8], [71, 4], [71, 8], [72, 8], [74, 4], [76, 4], [72, 4], [69, 4], [69, 4], [0, 4],
+]
+
+function playTetris() 
+{
+  audio_context = new AudioContext();
+  oscillator = audio_context.createOscillator();
+  oscillator.start(0);
+  var time = audio_context.currentTime + eps;
+  tetris.forEach(note => {
+    const freq = Math.pow(2, (note[0]-69)/12)*440;
+    console.log(time);
+    oscillator.frequency.setTargetAtTime(0, time - eps, 0.001);
+    oscillator.frequency.setTargetAtTime(freq, time, 0.001);
+    time += length / note[1];
+  });
+}
+*/
+//-----------------------
 let lands = new Image();
 lands.src ='images/lands.png';
 
@@ -106,12 +167,24 @@ function init()
 }
 function InputKey(e) 
 {
+  //alert(e.keyCode);
     if(e.keyCode==97)
     {
         if(!jump)
         {
             forceJump=32;
             jump=true;
+            playSound(60); 
         }
-    }
+    }/*else if(e.keyCode==115)
+    {
+
+      playSound(62); 
+        
+    }else if(e.keyCode==100)
+    {
+
+      playSound(64); 
+        
+    }*/
 }
